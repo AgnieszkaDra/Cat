@@ -6,8 +6,8 @@
 
 .stomach {
     position: absolute;
-    width: 92px;
-    height: 80px;
+    width: 112px;
+    height: 90px;
     background-color: black;
     border-radius: 70%;
     //border: 4px solid $mug1;
@@ -61,4 +61,16 @@
     width: 150px;
     background-color: white;
     z-index: -1;
+  }
+
+  .head {
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    left: 15px;
+    top: -60px;
+   
+    z-index: 2;
   }
