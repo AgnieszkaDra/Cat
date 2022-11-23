@@ -1,0 +1,46 @@
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.stomach {
+  position: absolute;
+  width: 92px;
+  height: 80px;
+  background-color: black;
+  border-radius: 70%;
+}
+
+.tail {
+  position: absolute;
+  margin-left: 70px;
+  margin-top: -10px;
+  height: 80px;
+  width: 60px;
+  background-color: black;
+  border-radius: 80px 80px 80px 80px;
+  display: inline-block;
+  z-index: -1;
+  transform: rotate(-45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tail-fill {
+  background-color: white;
+  height: 50px;
+  width: 30px;
+  border-radius: 0px 0px 50px 30px;
+}
+
+.tail-mask {
+  position: absolute;
+  margin-top: -10px;
+  margin-left: 10px;
+  height: 30px;
+  width: 150px;
+  background-color: white;
+  z-index: -1;
+}/*# sourceMappingURL=style.css.map */
