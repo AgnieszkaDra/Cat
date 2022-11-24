@@ -1,76 +1,142 @@
 .container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  top: 50%;
+  margin-top: -40px;
 }
 
 .stomach {
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  border-top-left-radius: 50px;  
+  border-top-right-radius: 50px;
+}
+
+.stomach-bottom {
+  width: 100px;
+  height: 50px;
+ 
+  margin: 0;
+  padding: 0;
+
+}
+
+.stomach-bottom li {
+  position: absolute;
+list-style: none;
+margin: 0;
+padding: 0;
+float: left;
+width: 20px;
+height: 50px;
+border-radius: 25px/10px;
+background-color: #fff;
+border: 2px solid black;
+border-radius: 100%;
+
+&:first-child{
+top: 40px;
+left:8px;
+transform: rotate(-40deg);
+ background-color: black;
+ 
+}
+&:nth-child(2){
+  top: 40px;
+  right: 8px;
+  transform: rotate(40deg);
+  background-color: black;
+}
+}
+
+.mask {
+position: absolute;
+clip-path: polygon(50% 0, 100% 100%, 0 100%);
+width: 100px;
+height: 50px;
+
+background-color: black;
+transform: rotate(180deg) translateY(50px)
+
+}
+
+
+
+
+.tail {
+  position: absolute;
+  // margin-left: 70px;
+  // margin-top: -10px;
+  height: 80px;
+  width: 60px;
+  background-color: black;
+  border-radius: 80px 80px 80px 80px;
+  display: inline-block;
+  z-index: -1;
+ transform: rotate(-45deg) translateX(120px) translateY(-10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tail-fill {
+  background-color: white;
+  height: 50px;
+  width: 30px;
+  border-radius: 0px 0px 50px 30px;
+  }
+
+.tail-mask {
+  position: absolute;
+  margin-top: -10px;
+  margin-left: 10px;
+  height: 30px;
+  width: 150px;
+  background-color: white;
+  z-index: -1;
+  transform: translateY(-80px);
+}
+
+.head {
+  width: 130px;
+  height: 130px;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+  left: -15px;
+  top: -110px;
+  z-index: 2;
+}
+
+.eyes li {
+  position: absolute;
+  list-style: none;
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 100%;
+  
+  &:first-child{
+    top:30px;
+    right: 30px;
+  }
+  &:nth-child(2){
+    top: 30px;
+    left: 30px;
+  }
+  
+  &:after {
+    content: "";
     position: absolute;
-    width: 112px;
-    height: 90px;
+    height: 4px;
+    width: 2px;
     background-color: black;
-    border-radius: 70%;
-    //border: 4px solid $mug1;
-    
-    // &:after {
-    //   content: "";
-    //   position: absolute;
-    //   margin-left: 40px;
-    // margin-top: 40px;
-    // height: 60px;
-    // width: 80px;
-    // background-color: black;
-    // //border: 15px solid #D3B897;
-    // border-radius: 50px;
-    // display: inline-block;
-    // z-index: 0;
-    // }
+    top: -4px;
+    left: -2px;
+    transform: rotate(120deg);
   }
-
-  .tail {
-    position: absolute;
-    margin-left: 70px;
-    margin-top: -10px;
-    height: 80px;
-    width: 60px;
-    background-color: black;
-   
-    border-radius: 80px 80px 80px 80px;
-    display: inline-block;
-    z-index: -1;
-    transform: rotate(-45deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .tail-fill {
-    background-color: white;
-    height: 50px;
-    width: 30px;
-    border-radius: 0px 0px 50px 30px;
-    
-    //transform: rotate(-30deg);
-  }
-
-  .tail-mask {
-    position: absolute;
-    margin-top: -10px;
-    margin-left: 10px;
-    height: 30px;
-    width: 150px;
-    background-color: white;
-    z-index: -1;
-  }
-
-  .head {
-    width: 80px;
-    height: 80px;
-    background-color: black;
-    position: absolute;
-    border-radius: 50%;
-    left: 15px;
-    top: -60px;
-   
-    z-index: 2;
-  }
+}
