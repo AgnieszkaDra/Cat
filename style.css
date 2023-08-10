@@ -49,8 +49,7 @@
 
 .mask {
   position: absolute;
-  -webkit-clip-path: polygon(50% 0, 100% 100%, 0 100%);
-          clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
   width: 100px;
   height: 50px;
   background-color: black;
@@ -115,18 +114,17 @@
   float: left;
   width: 40px;
   height: 50px;
-  -webkit-clip-path: ellipse(50% 24% at 50% 50%);
-          clip-path: ellipse(50% 24% at 50% 50%);
+  clip-path: ellipse(50% 24% at 50% 50%);
   background-color: #fff;
   border: 2px solid black;
 }
 .eyes li:first-child {
-  top: 45px;
+  top: 40px;
   right: 15px;
   transform: rotate(-20deg);
 }
 .eyes li:nth-child(2) {
-  top: 45px;
+  top: 40px;
   left: 15px;
   transform: rotate(20deg);
 }
@@ -139,4 +137,81 @@
   top: -4px;
   left: -2px;
   transform: rotate(120deg);
-}/*# sourceMappingURL=style.css.map */
+}
+
+.nose {
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, 0);
+  height: 17px;
+  width: 18px;
+  background-color: #554D44;
+  clip-path: ellipse(40% 22% at 50% 50%);
+  display: inline-block;
+  z-index: 6;
+}
+
+.smile {
+  position: absolute;
+  left: calc(50% - 20px);
+  top: 75%;
+  transform: translate(-50%, 0);
+  z-index: 5;
+}
+
+.smile-left-align {
+  display: inline-block;
+  position: absolute;
+}
+
+.smile-left {
+  height: 10px;
+  width: 20px;
+  border-radius: 0 0 10px 10px;
+  background-color: #E9CBA7;
+  border: 2px solid #554D44;
+}
+
+.smile-right-align {
+  display: inline-block;
+  margin-left: 22px;
+  position: absolute;
+}
+
+.smile-right {
+  height: 10px;
+  width: 20px;
+  border-radius: 0 0 10px 10px;
+  background-color: #E9CBA7;
+  border: 2px solid #554D44;
+}
+
+.mask-left {
+  margin-top: -58%;
+  height: 4px;
+  width: 20px;
+  background-color: #E9CBA7;
+}
+
+.mask-right {
+  margin-top: -58%;
+  height: 4px;
+  width: 24px;
+  background-color: #E9CBA7;
+}
+
+.wasy {
+  left: 50%;
+  top: 65%;
+  width: 180px;
+  height: 180px;
+}
+.wasy div:nth-child(1) {
+  width: 40px;
+  height: 20px;
+  background-color: pink;
+  border-radius: 0px 78px 20px 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

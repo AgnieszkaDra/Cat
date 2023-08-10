@@ -117,6 +117,7 @@ transform: rotate(180deg) translateY(50px)
   left: -15px;
   top: -90px;
   z-index: 2;
+  
 }
 
 .eyes li {
@@ -131,12 +132,12 @@ transform: rotate(180deg) translateY(50px)
   
   
   &:first-child{
-    top: 45px;
+    top: 40px;
     right: 15px;
     transform: rotate(-20deg);
   }
   &:nth-child(2){
-    top: 45px;
+    top: 40px;
     left: 15px;
     transform: rotate(20deg);
   }
@@ -151,4 +152,98 @@ transform: rotate(180deg) translateY(50px)
     left: -2px;
     transform: rotate(120deg);
   }
+}
+
+.nose {
+  position: absolute;
+  left: 50%;
+  top: 65%;
+    transform: translate(-50%, 0);
+  // margin-left: 15%;
+  height: 17px;
+  width: 18px;
+  background-color: #554D44;
+  clip-path: ellipse(40% 22% at 50% 50%);
+  display: inline-block;
+  z-index: 6;
+}
+
+.smile {
+  // position: relative;
+  // margin-left: 29%;
+  // margin-top: -22%;
+  position: absolute;
+  left: calc(50% - 20px);
+  top: 75%;
+  transform: translate(-50%, 0);
+  z-index: 5;
+}
+
+.smile-left-align {
+  display: inline-block;
+  position: absolute;
+}
+
+.smile-left {
+  height: 10px;
+  width: 20px;
+  border-radius: 0 0 10px 10px;
+  background-color: #E9CBA7;
+  border: 2px solid #554D44;
+}
+
+.smile-right-align {
+  display: inline-block;
+  margin-left: 22px;
+  position: absolute;
+}
+
+.smile-right {
+  height: 10px;
+  width: 20px;
+  border-radius: 0 0 10px 10px;
+  background-color: #E9CBA7;
+  border: 2px solid #554D44;
+}
+
+.mask-left {
+  margin-top: -58%;
+  height: 4px;
+  width: 20px;
+  background-color: #E9CBA7;
+}
+
+.mask-right {
+  margin-top: -58%;
+  height: 4px;
+  width: 24px;
+  background-color: #E9CBA7;
+}
+
+// .wasy {
+//   left: 50%;
+//   top: 65%;
+//     transform: translate(-50%, 0);
+//     width:180px;
+//     height:180px;
+//     left:350px;
+//     border-radius:50%;
+//     position:absolute;
+//     color:black;
+//     background-color:pink;
+// }
+
+.wasy {
+  left: 50%;
+    top: 65%;
+  
+    width:180px;
+    height:180px;
+   div:nth-child(1){
+    width: 40px;
+    height: 20px;
+    background-color: pink;
+    border-radius: 0px 78px 20px 20px;
+     
+    }
 }
